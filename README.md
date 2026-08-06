@@ -518,7 +518,7 @@ Security considerations include:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/festalytics.git
+git clone https://github.com/iamsaadsiddiq/Festalytics-Web-and-Mobile-Application
 ````
 
 Navigate into project directory:
