@@ -647,16 +647,16 @@ The system validates:
 
 # Contributors
 
-Sarah Zafar
+Sarah Zafar:
 Mobile Application Development
 
-Ahmad Kamran
+Ahmad Kamran:
 Web Application Development
 
-Muhammad Ukasha Khan
+Muhammad Ukasha Khan:
 Database Management and Quality Assurance
 
-Muhammad Saad
+Muhammad Saad:
 AI Integration, Backend Development and Documentation
 
 ---
