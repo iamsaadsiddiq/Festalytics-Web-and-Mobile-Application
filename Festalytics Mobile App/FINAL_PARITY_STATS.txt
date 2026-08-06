@@ -1,0 +1,4 @@
+Dart files: 165
+Total Dart lines: 6741
+Export-only app_core stubs remaining: 0
+Final UI parity layer lines: 1072

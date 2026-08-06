@@ -1,0 +1,70 @@
+// Copy into Firebase Console → Firestore → Rules (adapt to your auth helpers).
+// Festalytics Borrow Hub + existing vendor tenant model.
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isVendor() {
+      return isSignedIn() && userDoc().role == 'vendor';
+    }
+
+    function myVenueId() {
+      return userDoc().venueId;
+    }
+
+    function ownsVenue(venueId) {
+      return isVendor() && myVenueId() == venueId;
+    }
+
+    match /users/{userId} {
+      allow read, write: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    match /venues/{venueId} {
+      allow read: if true;
+      allow write: if ownsVenue(venueId);
+    }
+
+    match /inventory_listings/{listingId} {
+      allow read: if isVendor();
+      allow create, update, delete: if isVendor()
+        && request.resource.data.lenderVenueId == myVenueId();
+      allow update, delete: if isVendor()
+        && resource.data.lenderVenueId == myVenueId();
+    }
+
+    match /borrow_requests/{requestId} {
+      allow read: if isVendor() && (
+        resource.data.borrowerVenueId == myVenueId() ||
+        resource.data.lenderVenueId == myVenueId()
+      );
+      allow create: if isVendor()
+        && request.resource.data.borrowerVenueId == myVenueId()
+        && request.resource.data.borrowerUserId == request.auth.uid
+        && request.resource.data.borrowerVenueId != request.resource.data.lenderVenueId
+        && request.resource.data.status == 'pending_lender_approval';
+      allow update: if isVendor() && (
+        resource.data.lenderVenueId == myVenueId() ||
+        (resource.data.borrowerVenueId == myVenueId()
+          && resource.data.status == 'pending_lender_approval')
+      );
+    }
+
+    match /bookings/{bookingId} {
+      allow read, write: if isSignedIn();
+    }
+
+    match /quotations/{quotationId} {
+      allow read, write: if isSignedIn();
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36603711850",
+    "project_id": "festalytics-1940a",
+    "storage_bucket": "festalytics-1940a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36603711850:android:707eb9aa504198cea01513",
+        "android_client_info": {
+          "package_name": "com.example.festalytics_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36603711850-g5mm9qgi9084bov2rpccno6vrh9dgh47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5UPmX5AQLxUjb4WIFQ4a7C3FcQ74R3K8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36603711850-g5mm9qgi9084bov2rpccno6vrh9dgh47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

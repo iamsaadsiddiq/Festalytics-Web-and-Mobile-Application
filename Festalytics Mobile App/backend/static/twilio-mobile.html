@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Mobile – Event Confirmation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0f1117;--card:#1a1d27;--border:#2a2d3a;
+      --accent:#7c6af7;--green:#22c55e;--red:#ef4444;
+      --text:#e2e8f0;--muted:#94a3b8;
+    }
+    body{
+      background:var(--bg);color:var(--text);
+      font-family:'Segoe UI',system-ui,sans-serif;
+      min-height:100vh;display:flex;align-items:center;
+      justify-content:center;padding:20px;
+    }
+    .wrap{width:100%;max-width:400px}
+
+    .card{
+      background:var(--card);border:1px solid var(--border);
+      border-radius:22px;padding:28px 22px;margin-bottom:14px;
+      text-align:center;
+    }
+
+    .avatar{
+      width:86px;height:86px;border-radius:50%;margin:0 auto 16px;
+      display:flex;align-items:center;justify-content:center;font-size:36px;
+      background:linear-gradient(135deg,#7c6af7,#c084fc);
+    }
+    .avatar.ring{animation:ring 0.8s ease-in-out infinite alternate}
+    @keyframes ring{from{box-shadow:0 0 0 0 #7c6af750}to{box-shadow:0 0 0 20px #7c6af700}}
+
+    h2{font-size:20px;font-weight:700;margin-bottom:6px}
+    .sub{color:var(--muted);font-size:13px;line-height:1.5}
+
+    .chip{
+      display:inline-flex;align-items:center;gap:7px;
+      padding:7px 16px;border-radius:999px;
+      font-size:12px;font-weight:600;margin-top:14px;
+    }
+    .chip-idle   {background:#1e293b;color:var(--muted)}
+    .chip-ready  {background:#14532d30;color:var(--green)}
+    .chip-calling{background:#7c6af720;color:#a78bfa}
+    .chip-ended  {background:#7f1d1d30;color:var(--red)}
+    .chip-dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+    .chip-dot.blink{animation:blink 1s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+    .btn-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+    .btn-full{margin-top:14px;width:100%}
+
+    button{
+      border:none;border-radius:14px;padding:16px;
+      font-size:15px;font-weight:600;cursor:pointer;color:white;
+      display:flex;align-items:center;justify-content:center;gap:8px;
+      transition:opacity .15s,transform .1s;
+    }
+    button:hover:not(:disabled){opacity:.85}
+    button:active:not(:disabled){transform:scale(.97)}
+    button:disabled{opacity:.32;cursor:not-allowed}
+
+    .btn-purple{background:#7c6af7}
+    .btn-green {background:#16a34a}
+    .btn-red   {background:#dc2626}
+
+    .hidden{display:none!important}
+
+    .timer{font-size:32px;font-weight:700;color:#a78bfa;margin-bottom:10px;letter-spacing:2px}
+
+    .rec-badge{
+      display:inline-flex;align-items:center;gap:6px;
+      background:#7f1d1d30;color:var(--red);
+      border:1px solid #7f1d1d50;border-radius:999px;
+      padding:5px 12px;font-size:12px;font-weight:600;margin-top:12px;
+    }
+    .rec-dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:blink 1s infinite}
+
+    .result-box{
+      background:#172554;color:#facc15;
+      border-radius:14px;padding:16px;
+      font-size:17px;font-weight:700;margin-top:14px;
+    }
+
+    .log{
+      background:#0f1117;border-radius:12px;padding:12px;
+      font-size:12px;color:#64748b;line-height:1.8;
+      max-height:160px;overflow-y:auto;text-align:left;
+    }
+    .log span{display:block}
+
+    audio{width:100%;margin-top:10px;border-radius:8px;accent-color:var(--accent)}
+
+    /* Step indicator */
+    .steps{display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:20px}
+    .step{display:flex;flex-direction:column;align-items:center;gap:4px}
+    .step-circle{
+      width:32px;height:32px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      font-size:13px;font-weight:700;border:2px solid var(--border);
+      color:var(--muted);background:var(--card);
+    }
+    .step-circle.done {border-color:var(--green);color:var(--green);background:#14532d20}
+    .step-circle.active{border-color:var(--accent);color:var(--accent);background:#7c6af720}
+    .step-label{font-size:10px;color:var(--muted);text-align:center;max-width:60px}
+    .step-line{width:40px;height:2px;background:var(--border);margin-bottom:18px}
+    .step-line.done{background:var(--green)}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Step indicator -->
+  <div class="steps" id="stepIndicator">
+    <div class="step">
+      <div class="step-circle active" id="s1">1</div>
+      <div class="step-label">Register</div>
+    </div>
+    <div class="step-line" id="l1"></div>
+    <div class="step">
+      <div class="step-circle" id="s2">2</div>
+      <div class="step-label">Answer Call</div>
+    </div>
+    <div class="step-line" id="l2"></div>
+    <div class="step">
+      <div class="step-circle" id="s3">3</div>
+      <div class="step-label">Speak</div>
+    </div>
+    <div class="step-line" id="l3"></div>
+    <div class="step">
+      <div class="step-circle" id="s4">4</div>
+      <div class="step-label">Done</div>
+    </div>
+  </div>
+
+  <!-- SCREEN 1: Register -->
+  <div class="card" id="screenRegister">
+    <div class="avatar">Phone</div>
+    <h2>Mobile Browser</h2>
+    <p class="sub">
+      Tap <strong>Register</strong> to connect this phone to the system.
+      The laptop will then be able to call you.
+    </p>
+    <div class="chip chip-idle" id="regChip"><span class="chip-dot"></span>Not registered</div>
+    <button class="btn-purple btn-full" id="btnRegister" onclick="doRegister()">
+       Register
+    </button>
+  </div>
+
+  <!-- SCREEN 2: Incoming call -->
+  <div class="card hidden" id="screenIncoming">
+    <div class="avatar ring">Call</div>
+    <h2>Incoming Call</h2>
+    <p class="sub">Wedding Hall Confirmation Call<br>Tap Accept to hear the AI voice agent.</p>
+    <div class="btn-row">
+      <button class="btn-red"   onclick="rejectCall()"> Reject</button>
+      <button class="btn-green" onclick="acceptCall()">Accept</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: Active call -->
+  <div class="card hidden" id="screenActive">
+    <div class="timer" id="timer">00:00</div>
+    <div class="avatar">Headset</div>
+    <h2>Call in Progress</h2>
+    <p class="sub">Listen to the AI voice agent and respond by speaking clearly.</p>
+    <div class="rec-badge"><div class="rec-dot"></div>Recording both sides</div>
+    <div class="result-box hidden" id="resultBox">-</div>
+    <button class="btn-red btn-full" onclick="hangUp()"> End Call</button>
+  </div>
+
+  <!-- SCREEN 4: Call ended -->
+  <div class="card hidden" id="screenEnded">
+    <div class="avatar">Done</div>
+    <h2>Call Ended</h2>
+    <div class="result-box" id="finalResult">-</div>
+    <p class="sub" style="margin-top:12px">Your local mic recording is below.<br>The full call recording will appear on the laptop.</p>
+    <audio id="localAudio" controls style="margin-top:14px"></audio>
+    <button class="btn-purple btn-full" style="margin-top:14px" onclick="resetToRegister()">
+       Register Again
+    </button>
+  </div>
+
+  <!-- Activity log (always visible) -->
+  <div class="card">
+    <p style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#475569;margin-bottom:8px">Activity</p>
+    <div class="log" id="logBox">Waiting…</div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@twilio/voice-sdk@2.12.4/dist/twilio.min.js"></script>
+<script>
+let device, incomingCall, activeCall;
+let timerInterval, secs = 0;
+let mediaRecorder, recChunks = [], localStream;
+
+// ── Screens ───────────────────────────────────────────────────────────────────
+function showScreen(name) {
+  ["Register","Incoming","Active","Ended"].forEach(s =>
+    document.getElementById("screen"+s).classList.add("hidden"));
+  document.getElementById("screen"+name).classList.remove("hidden");
+}
+
+// ── Steps ─────────────────────────────────────────────────────────────────────
+function setStep(n) {
+  for (let i=1;i<=4;i++) {
+    const c = document.getElementById("s"+i);
+    if (i < n)       { c.className="step-circle done"; c.textContent="Done"; }
+    else if (i===n)  { c.className="step-circle active"; c.textContent=i; }
+    else             { c.className="step-circle"; c.textContent=i; }
+  }
+  for (let i=1;i<=3;i++) {
+    const l = document.getElementById("l"+i);
+    l.className = i < n ? "step-line done" : "step-line";
+  }
+}
+
+// ── Log ───────────────────────────────────────────────────────────────────────
+function log(msg) {
+  const b = document.getElementById("logBox");
+  if (b.textContent==="Waiting…") b.innerHTML="";
+  b.innerHTML += `<span>${new Date().toLocaleTimeString()} - ${msg}</span>`;
+  b.scrollTop = b.scrollHeight;
+}
+
+// ── Timer ─────────────────────────────────────────────────────────────────────
+function startTimer() {
+  secs = 0;
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    secs++;
+    const m=String(Math.floor(secs/60)).padStart(2,"0");
+    const s=String(secs%60).padStart(2,"0");
+    document.getElementById("timer").textContent=`${m}:${s}`;
+  }, 1000);
+}
+function stopTimer() { clearInterval(timerInterval); }
+
+// ── Register ──────────────────────────────────────────────────────────────────
+async function doRegister() {
+  document.getElementById("btnRegister").disabled = true;
+  log("Fetching token from server…");
+  try {
+    const r = await fetch("/api/twilio/token");
+    const d = await r.json();
+
+    const DC = window.Twilio?.Device || window.TwilioVoice?.Device;
+    if (!DC) { log(" Twilio SDK not loaded"); document.getElementById("btnRegister").disabled=false; return; }
+
+    device = new DC(d.token, { logLevel: 1 });
+
+    device.on("registered", () => {
+      log("Registered as: " + d.identity);
+      const chip = document.getElementById("regChip");
+      chip.className = "chip chip-ready";
+      chip.innerHTML = '<span class="chip-dot"></span>Registered - waiting for call';
+      setStep(2);
+    });
+
+    device.on("incoming", (call) => {
+      incomingCall = call;
+      log("Incoming call!");
+      showScreen("Incoming");
+      setStep(2);
+    });
+
+    device.on("error", e => log("Device error: " + e.message));
+
+    await device.register();
+  } catch(e) {
+    log("Error: " + e.message);
+    document.getElementById("btnRegister").disabled = false;
+  }
+}
+
+// ── Accept ────────────────────────────────────────────────────────────────────
+async function acceptCall() {
+  if (!incomingCall) return;
+  log("Accepting call…");
+
+  // Start local mic recording
+  try {
+    localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    recChunks = [];
+    mediaRecorder = new MediaRecorder(localStream);
+    mediaRecorder.ondataavailable = e => { if(e.data.size>0) recChunks.push(e.data); };
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(recChunks, { type:"audio/webm" });
+      document.getElementById("localAudio").src = URL.createObjectURL(blob);
+      log("Local recording saved.");
+    };
+    mediaRecorder.start(300);
+    log("Mic recording started.");
+  } catch(e) {
+    log("Mic access failed: " + e.message + " (call will still work)");
+  }
+
+  activeCall = incomingCall;
+  incomingCall = null;
+
+  try {
+    await activeCall.accept();
+    log("Call accepted. Listen for the English greeting.");
+    showScreen("Active");
+    startTimer();
+    setStep(3);
+
+    // Poll for status to show result box
+    const poll = setInterval(async () => {
+      try {
+        const d = await (await fetch("/api/twilio/booking-info")).json();
+        if (d.status === "accepted" || d.status === "cancelled") {
+          const rb = document.getElementById("resultBox");
+          rb.textContent = d.status==="accepted" ? "Event Confirmed" : "Event Cancelled";
+          rb.classList.remove("hidden");
+          clearInterval(poll);
+        }
+      } catch(e) {}
+    }, 1500);
+
+    activeCall.on("disconnect", onCallEnded);
+  } catch(e) {
+    log("Accept error: " + e.message);
+  }
+}
+
+// ── Reject ────────────────────────────────────────────────────────────────────
+function rejectCall() {
+  if (incomingCall) incomingCall.reject();
+  incomingCall = null;
+  showScreen("Register");
+  setStep(1);
+  log("Call rejected.");
+}
+
+// ── Hang up ───────────────────────────────────────────────────────────────────
+function hangUp() {
+  if (activeCall) activeCall.disconnect();
+  // onCallEnded fires via event
+}
+
+// ── Call ended ────────────────────────────────────────────────────────────────
+async function onCallEnded() {
+  stopTimer();
+  if (mediaRecorder && mediaRecorder.state !== "inactive") mediaRecorder.stop();
+  if (localStream) localStream.getTracks().forEach(t => t.stop());
+
+  // Get final status
+  let finalMsg = "Call ended.";
+  try {
+    const d = await (await fetch("/api/twilio/booking-info")).json();
+    finalMsg = d.status==="accepted" ? "Event Confirmed" :
+               d.status==="cancelled"? "Event Cancelled" : "Status: Pending";
+  } catch(e) {}
+
+  document.getElementById("finalResult").textContent = finalMsg;
+  showScreen("Ended");
+  setStep(4);
+  log("Call ended Call ended. " + finalMsg);
+}
+
+// ── Reset ─────────────────────────────────────────────────────────────────────
+async function resetToRegister() {
+  activeCall = null;
+  incomingCall = null;
+  showScreen("Register");
+  setStep(1);
+  document.getElementById("btnRegister").disabled = false;
+  const chip = document.getElementById("regChip");
+  chip.className = "chip chip-idle";
+  chip.innerHTML = '<span class="chip-dot"></span>Not registered';
+  log("Reset. Tap Register to reconnect.");
+}
+</script>
+</body>
+</html>

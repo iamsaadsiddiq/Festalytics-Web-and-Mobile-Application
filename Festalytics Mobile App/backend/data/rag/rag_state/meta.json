@@ -1,0 +1,30 @@
+{
+  "total_halls": 273,
+  "areas": [
+    "Allama Iqbal Town",
+    "Cantt (Cavalry Ground, Saddar, etc.)",
+    "DHA Phase 8 (includes Park View & Air Avenue)",
+    "Garden Town",
+    "Gulberg (III)",
+    "Johar Town",
+    "Marghzar",
+    "Model Town",
+    "Raiwind Road",
+    "Sabzazar",
+    "Township"
+  ],
+  "venue_types": [
+    "Banquet Hall",
+    "Club / Garrison Venue",
+    "Hotel Banquet",
+    "Marquee / Lawn",
+    "Multi-Hall Banquet"
+  ],
+  "price_tiers": [
+    "Budget",
+    "Premium",
+    "Standard"
+  ],
+  "model": "gemini-2.5-flash",
+  "top_k": 12
+}

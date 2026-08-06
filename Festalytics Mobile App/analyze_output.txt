@@ -1,0 +1,383 @@
+﻿Analyzing festalytics-app-full-clone...                         
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\app_widgets.dart:86:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\app_widgets.dart:111:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\widgets\app_widgets.dart:155:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\login_screen.dart:146:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\login_screen.dart:234:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\login_screen.dart:236:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\signup_screen.dart:129:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\verify_email_screen.dart:79:89 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\vendor\vendor_availability_screen.dart:47:242 - deprecated_member_use
+   info - The private field _aiCalling could be 'final' - lib\features\vendor\vendor_bookings_screen.dart:155:8 - prefer_final_fields
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\venues\venue_details_screen.dart:96:341 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\venues\venue_details_screen.dart:98:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\core\widgets\app_widgets.dart:86:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\core\widgets\app_widgets.dart:111:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\core\widgets\app_widgets.dart:155:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\auth\login_screen.dart:146:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\auth\login_screen.dart:234:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\auth\login_screen.dart:236:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\auth\signup_screen.dart:129:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\auth\verify_email_screen.dart:79:89 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\features\vendor\vendor_availability_screen.dart:47:242 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\lib\features\venues\venue_details_screen.dart:96:341 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\lib\features\venues\venue_details_screen.dart:98:47 - deprecated_member_use
+   info - The file name 'AllVenues.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\AllVenues.dart:1:1 - file_names
+   info - The file name 'DashboardHeader.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\DashboardHeader.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\DashboardHeader.dart:31:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\DashboardHeader.dart:46:54 - deprecated_member_use
+   info - The file name 'FindMyDecor.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\FindMyDecor.dart:1:1 - file_names
+   info - The file name 'Footer.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\Footer.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\Footer.dart:95:29 - deprecated_member_use
+   info - The file name 'HallCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\HallCard.dart:1:1 - file_names
+   info - The file name 'HeroSearchSelect.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\HeroSearchSelect.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\HeroSearchSelect.dart:71:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\HeroSearchSelect.dart:115:39 - deprecated_member_use
+   info - The file name 'LandingPage.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\LandingPage.dart:1:1 - file_names
+   info - The file name 'Login.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\Login.dart:1:1 - file_names
+   info - The file name 'ManageEvent.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ManageEvent.dart:1:1 - file_names
+   info - The file name 'MyEvents.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\MyEvents.dart:1:1 - file_names
+   info - The file name 'Navbar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\Navbar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\Navbar.dart:33:33 - deprecated_member_use
+   info - The file name 'ProtectedRoute.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ProtectedRoute.dart:1:1 - file_names
+   info - The file name 'PublicHeader.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\PublicHeader.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\PublicHeader.dart:21:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\PublicHeader.dart:52:52 - deprecated_member_use
+   info - The file name 'PublicSiteHeader.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\PublicSiteHeader.dart:1:1 - file_names
+   info - The file name 'ServiceDiscovery.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ServiceDiscovery.dart:1:1 - file_names
+   info - The file name 'SignupPage.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\SignupPage.dart:1:1 - file_names
+   info - The file name 'UserDashboard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\UserDashboard.dart:1:1 - file_names
+   info - The file name 'VendorDashboard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\VendorDashboard.dart:1:1 - file_names
+   info - The file name 'VenueDetails.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\VenueDetails.dart:1:1 - file_names
+   info - The file name 'AIPlanner.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ai-planner\AIPlanner.dart:1:1 - file_names
+   info - The file name 'ChatBubble.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ai-planner\ChatBubble.dart:1:1 - file_names
+   info - The file name 'DecorAnalysisCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:26:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:36:66 - deprecated_member_use
+   info - The file name 'QuickActionButton.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ai-planner\QuickActionButton.dart:1:1 - file_names
+   info - The file name 'VendorCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\ai-planner\VendorCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\ai-planner\VendorCard.dart:24:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\ai-planner\VendorCard.dart:58:72 - deprecated_member_use
+   info - The file name 'AuthGateLoginForm.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\auth\AuthGateLoginForm.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\auth\AuthGateLoginForm.dart:84:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\auth\AuthGateLoginForm.dart:104:37 - deprecated_member_use
+   info - The file name 'AuthGateModal.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\auth\AuthGateModal.dart:1:1 - file_names
+   info - The private field _busy could be 'final' - lib\lib\web_clone\src\components\auth\AuthGateModal.dart:61:8 - prefer_final_fields
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\auth\AuthGateModal.dart:109:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\auth\AuthGateModal.dart:193:33 - deprecated_member_use
+   info - The file name 'CounterOfferCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\chat\CounterOfferCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\chat\CounterOfferCard.dart:37:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\chat\CounterOfferCard.dart:139:22 - deprecated_member_use
+   info - The file name 'CustomerVenueChat.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\chat\CustomerVenueChat.dart:1:1 - file_names
+   info - The file name 'CreateEvent.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\CreateEvent.dart:1:1 - file_names
+   info - The file name 'EventStepper.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\EventStepper.dart:1:1 - file_names
+   info - The file name 'BasicDetails.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\BasicDetails.dart:1:1 - file_names
+   info - The file name 'Budget.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\Budget.dart:1:1 - file_names
+   info - The file name 'Review.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\Review.dart:1:1 - file_names
+   info - The file name 'Timeline.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\Timeline.dart:1:1 - file_names
+   info - The file name 'Vendors.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\Vendors.dart:1:1 - file_names
+   info - The file name 'VenueSelection.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\create-event\steps\VenueSelection.dart:1:1 - file_names
+   info - The file name 'AnalysisResult.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:16:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:16:161 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:47:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:90:70 - deprecated_member_use
+   info - The file name 'FileUpload.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\FileUpload.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\FileUpload.dart:52:62 - deprecated_member_use
+   info - The file name 'Loader.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\Loader.dart:1:1 - file_names
+   info - The file name 'MoodboardButton.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\MoodboardButton.dart:1:1 - file_names
+   info - The file name 'VendorCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\VendorCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\VendorCard.dart:29:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\find-my-decor\VendorCard.dart:61:72 - deprecated_member_use
+   info - The file name 'decorAIService.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\find-my-decor\decorAIService.dart:1:1 - file_names
+   info - The file name 'AnalyticsPreview.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\AnalyticsPreview.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\AnalyticsPreview.dart:39:108 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\AnalyticsPreview.dart:39:145 - deprecated_member_use
+   info - The file name 'Calendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\Calendar.dart:1:1 - file_names
+   info - Unnecessary braces in a string interpolation - lib\lib\web_clone\src\components\vendor\Calendar.dart:33:26 - unnecessary_brace_in_string_interps
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\Calendar.dart:45:89 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\Calendar.dart:45:136 - deprecated_member_use
+   info - The file name 'Header.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\Header.dart:1:1 - file_names
+   info - The file name 'MetricCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\MetricCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\MetricCard.dart:20:51 - deprecated_member_use
+   info - The file name 'Pagination.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\Pagination.dart:1:1 - file_names
+   info - The file name 'RecentBookings.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\RecentBookings.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\RecentBookings.dart:42:56 - deprecated_member_use
+   info - The file name 'ServiceCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\ServiceCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\ServiceCard.dart:19:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\ServiceCard.dart:20:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\ServiceCard.dart:31:68 - deprecated_member_use
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\lib\web_clone\src\components\vendor\ServiceCard.dart:48:19 - deprecated_member_use
+   info - The file name 'ServiceFilters.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\ServiceFilters.dart:1:1 - file_names
+   info - The file name 'Sidebar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\Sidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\Sidebar.dart:55:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\Sidebar.dart:56:62 - deprecated_member_use
+   info - The file name 'VendorVenueGuard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\VendorVenueGuard.dart:1:1 - file_names
+   info - The file name 'AnalyticsCharts.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsCharts.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsCharts.dart:54:44 - deprecated_member_use
+   info - The file name 'AnalyticsKPIs.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsKPIs.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsKPIs.dart:41:52 - deprecated_member_use
+   info - The file name 'AnalyticsTables.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:37:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:41:70 - deprecated_member_use
+   info - The file name 'AvailabilitySettings.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\AvailabilitySettings.dart:1:1 - file_names
+   info - The file name 'DayBookings.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\DayBookings.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\DayBookings.dart:56:54 - deprecated_member_use
+   info - The file name 'SmallCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:62:73 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:62:133 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:69:54 - deprecated_member_use
+   info - The file name 'VenueAvailabilityCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\VenueAvailabilityCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\VenueAvailabilityCalendar.dart:108:36 - deprecated_member_use
+   info - The file name 'VenueCalendarDayPanel.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarDayPanel.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarDayPanel.dart:52:62 - deprecated_member_use
+   info - The file name 'VenueCalendarWorkspace.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:101:71 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:102:109 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:116:98 - deprecated_member_use
+   info - The file name 'BookingFilters.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\bookings\BookingFilters.dart:1:1 - file_names
+   info - The file name 'BookingStats.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:1:1 - file_names
+   info - Statements in an if should be enclosed in a block - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:16:70 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:17:44 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:18:44 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:19:43 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\bookings\BookingStats.dart:55:52 - deprecated_member_use
+   info - The file name 'BookingTable.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\bookings\BookingTable.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\bookings\BookingTable.dart:78:54 - deprecated_member_use
+   info - The file name 'BorrowRequestCard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:27:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:69:65 - deprecated_member_use
+   info - The file name 'Step1BasicInfo.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\create-service\Step1BasicInfo.dart:1:1 - file_names
+   info - The file name 'Step2Pricing.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\create-service\Step2Pricing.dart:1:1 - file_names
+   info - The file name 'Step3Gallery.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:84:54 - deprecated_member_use
+   info - Statements in a for should be enclosed in a block - lib\lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:103:53 - curly_braces_in_flow_control_structures
+   info - The file name 'Step4Review.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\create-service\Step4Review.dart:1:1 - file_names
+   info - The file name 'WizardProgress.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\create-service\WizardProgress.dart:1:1 - file_names
+   info - The file name 'NetworkGuard.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\inventory\NetworkGuard.dart:1:1 - file_names
+   info - The file name 'ChatQuickReplies.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\messages\ChatQuickReplies.dart:1:1 - file_names
+   info - The file name 'ChatSidebar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:81:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:85:91 - deprecated_member_use
+   info - The file name 'ChatThread.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\messages\ChatThread.dart:1:1 - file_names
+   info - The file name 'ComposeChatModal.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\messages\ComposeChatModal.dart:1:1 - file_names
+   info - The file name 'CreateTemplateModal.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\messages\CreateTemplateModal.dart:1:1 - file_names
+   info - The file name 'SettingsSidebar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\vendor\settings\SettingsSidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\vendor\settings\SettingsSidebar.dart:32:49 - deprecated_member_use
+   info - The file name 'PublicVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\venue\PublicVenueCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\venue\PublicVenueCalendar.dart:110:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\venue\PublicVenueCalendar.dart:121:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\lib\web_clone\src\components\venue\PublicVenueCalendar.dart:159:26 - deprecated_member_use
+   info - The file name 'VenueFaqSection.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\components\venue\VenueFaqSection.dart:1:1 - file_names
+   info - The file name 'AuthContext.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\context\AuthContext.dart:1:1 - file_names
+   info - The file name 'heroSearchOptions.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\data\heroSearchOptions.dart:1:1 - file_names
+   info - The file name 'lahoreAreas.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\data\lahoreAreas.dart:1:1 - file_names
+   info - The file name 'useBorrowHub.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useBorrowHub.dart:1:1 - file_names
+   info - The file name 'useChatMessages.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useChatMessages.dart:1:1 - file_names
+   info - The file name 'usePublicVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\usePublicVenueCalendar.dart:1:1 - file_names
+   info - The file name 'useVendorAnalyticsData.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useVendorAnalyticsData.dart:1:1 - file_names
+   info - The file name 'useVendorInbox.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useVendorInbox.dart:1:1 - file_names
+   info - The file name 'useVendorVenue.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useVendorVenue.dart:1:1 - file_names
+   info - The file name 'useVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\hooks\useVenueCalendar.dart:1:1 - file_names
+   info - The file name 'aiBackendUrl.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\aiBackendUrl.dart:1:1 - file_names
+   info - The file name 'pendingActions.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\auth\pendingActions.dart:1:1 - file_names
+   info - The file name 'borrowHubUtils.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\borrowHubUtils.dart:1:1 - file_names
+   info - The file name 'chatUtils.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\chatUtils.dart:1:1 - file_names
+   info - The file name 'eventDisplay.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\eventDisplay.dart:1:1 - file_names
+   info - The file name 'borrowHub.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\firestore\borrowHub.dart:1:1 - file_names
+   info - The file name 'vendorOnboarding.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\firestore\vendorOnboarding.dart:1:1 - file_names
+   info - The file name 'venueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\firestore\venueCalendar.dart:1:1 - file_names
+   info - The file name 'venueMyServicesState.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\firestore\venueMyServicesState.dart:1:1 - file_names
+   info - The file name 'sheetsAuth.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\google\sheetsAuth.dart:1:1 - file_names
+   info - The file name 'zaydanCallingSheet.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\google\zaydanCallingSheet.dart:1:1 - file_names
+   info - The file name 'messageInboxFilters.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\messageInboxFilters.dart:1:1 - file_names
+   info - The file name 'messageTemplates.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\messageTemplates.dart:1:1 - file_names
+   info - The file name 'publicVenues.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\publicVenues.dart:1:1 - file_names
+   info - The file name 'ragFallback.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\ragFallback.dart:1:1 - file_names
+   info - The file name 'venueFaqs.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\venueFaqs.dart:1:1 - file_names
+   info - The file name 'venueFilters.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\venueFilters.dart:1:1 - file_names
+   info - The file name 'venuePricing.dart' isn't a lower_case_with_underscores identifier - lib\lib\web_clone\src\lib\venuePricing.dart:1:1 - file_names
+   info - The file name 'AllVenues.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\AllVenues.dart:1:1 - file_names
+   info - The file name 'DashboardHeader.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\DashboardHeader.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\DashboardHeader.dart:31:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\DashboardHeader.dart:46:54 - deprecated_member_use
+   info - The file name 'FindMyDecor.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\FindMyDecor.dart:1:1 - file_names
+   info - The file name 'Footer.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\Footer.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\Footer.dart:95:29 - deprecated_member_use
+   info - The file name 'HallCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\HallCard.dart:1:1 - file_names
+   info - The file name 'HeroSearchSelect.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\HeroSearchSelect.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\HeroSearchSelect.dart:71:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\HeroSearchSelect.dart:115:39 - deprecated_member_use
+   info - The file name 'LandingPage.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\LandingPage.dart:1:1 - file_names
+   info - The file name 'Login.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\Login.dart:1:1 - file_names
+   info - The file name 'ManageEvent.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ManageEvent.dart:1:1 - file_names
+   info - The file name 'MyEvents.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\MyEvents.dart:1:1 - file_names
+   info - The file name 'Navbar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\Navbar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\Navbar.dart:33:33 - deprecated_member_use
+   info - The file name 'ProtectedRoute.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ProtectedRoute.dart:1:1 - file_names
+   info - The file name 'PublicHeader.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\PublicHeader.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\PublicHeader.dart:21:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\PublicHeader.dart:52:52 - deprecated_member_use
+   info - The file name 'PublicSiteHeader.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\PublicSiteHeader.dart:1:1 - file_names
+   info - The file name 'ServiceDiscovery.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ServiceDiscovery.dart:1:1 - file_names
+   info - The file name 'SignupPage.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\SignupPage.dart:1:1 - file_names
+   info - The file name 'UserDashboard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\UserDashboard.dart:1:1 - file_names
+   info - The file name 'VendorDashboard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\VendorDashboard.dart:1:1 - file_names
+   info - The file name 'VenueDetails.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\VenueDetails.dart:1:1 - file_names
+   info - The file name 'AIPlanner.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ai-planner\AIPlanner.dart:1:1 - file_names
+   info - The file name 'ChatBubble.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ai-planner\ChatBubble.dart:1:1 - file_names
+   info - The file name 'DecorAnalysisCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:26:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\ai-planner\DecorAnalysisCard.dart:36:66 - deprecated_member_use
+   info - The file name 'QuickActionButton.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ai-planner\QuickActionButton.dart:1:1 - file_names
+   info - The file name 'VendorCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\ai-planner\VendorCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\ai-planner\VendorCard.dart:24:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\ai-planner\VendorCard.dart:58:72 - deprecated_member_use
+   info - The file name 'AuthGateLoginForm.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\auth\AuthGateLoginForm.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\auth\AuthGateLoginForm.dart:84:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\auth\AuthGateLoginForm.dart:104:37 - deprecated_member_use
+   info - The file name 'AuthGateModal.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\auth\AuthGateModal.dart:1:1 - file_names
+   info - The private field _busy could be 'final' - lib\web_clone\src\components\auth\AuthGateModal.dart:61:8 - prefer_final_fields
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\auth\AuthGateModal.dart:109:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\auth\AuthGateModal.dart:193:33 - deprecated_member_use
+   info - The file name 'CounterOfferCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\chat\CounterOfferCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\chat\CounterOfferCard.dart:37:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\chat\CounterOfferCard.dart:139:22 - deprecated_member_use
+   info - The file name 'CustomerVenueChat.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\chat\CustomerVenueChat.dart:1:1 - file_names
+   info - The file name 'CreateEvent.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\CreateEvent.dart:1:1 - file_names
+   info - The file name 'EventStepper.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\EventStepper.dart:1:1 - file_names
+   info - The file name 'BasicDetails.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\BasicDetails.dart:1:1 - file_names
+   info - The file name 'Budget.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\Budget.dart:1:1 - file_names
+   info - The file name 'Review.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\Review.dart:1:1 - file_names
+   info - The file name 'Timeline.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\Timeline.dart:1:1 - file_names
+   info - The file name 'Vendors.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\Vendors.dart:1:1 - file_names
+   info - The file name 'VenueSelection.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\create-event\steps\VenueSelection.dart:1:1 - file_names
+   info - The file name 'AnalysisResult.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:16:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:16:161 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:47:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\AnalysisResult.dart:90:70 - deprecated_member_use
+   info - The file name 'FileUpload.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\FileUpload.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\FileUpload.dart:52:62 - deprecated_member_use
+   info - The file name 'Loader.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\Loader.dart:1:1 - file_names
+   info - The file name 'MoodboardButton.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\MoodboardButton.dart:1:1 - file_names
+   info - The file name 'VendorCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\VendorCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\VendorCard.dart:29:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\find-my-decor\VendorCard.dart:61:72 - deprecated_member_use
+   info - The file name 'decorAIService.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\find-my-decor\decorAIService.dart:1:1 - file_names
+   info - The file name 'AnalyticsPreview.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\AnalyticsPreview.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\AnalyticsPreview.dart:39:108 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\AnalyticsPreview.dart:39:145 - deprecated_member_use
+   info - The file name 'Calendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\Calendar.dart:1:1 - file_names
+   info - Unnecessary braces in a string interpolation - lib\web_clone\src\components\vendor\Calendar.dart:33:26 - unnecessary_brace_in_string_interps
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\Calendar.dart:45:89 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\Calendar.dart:45:136 - deprecated_member_use
+   info - The file name 'Header.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\Header.dart:1:1 - file_names
+   info - The file name 'MetricCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\MetricCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\MetricCard.dart:20:51 - deprecated_member_use
+   info - The file name 'Pagination.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\Pagination.dart:1:1 - file_names
+   info - The file name 'RecentBookings.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\RecentBookings.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\RecentBookings.dart:42:56 - deprecated_member_use
+   info - The file name 'ServiceCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\ServiceCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\ServiceCard.dart:19:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\ServiceCard.dart:20:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\ServiceCard.dart:31:68 - deprecated_member_use
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\web_clone\src\components\vendor\ServiceCard.dart:48:19 - deprecated_member_use
+   info - The file name 'ServiceFilters.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\ServiceFilters.dart:1:1 - file_names
+   info - The file name 'Sidebar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\Sidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\Sidebar.dart:55:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\Sidebar.dart:56:62 - deprecated_member_use
+   info - The file name 'VendorVenueGuard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\VendorVenueGuard.dart:1:1 - file_names
+   info - The file name 'AnalyticsCharts.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\analytics\AnalyticsCharts.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\analytics\AnalyticsCharts.dart:54:44 - deprecated_member_use
+   info - The file name 'AnalyticsKPIs.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\analytics\AnalyticsKPIs.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\analytics\AnalyticsKPIs.dart:41:52 - deprecated_member_use
+   info - The file name 'AnalyticsTables.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:37:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\analytics\AnalyticsTables.dart:41:70 - deprecated_member_use
+   info - The file name 'AvailabilitySettings.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\AvailabilitySettings.dart:1:1 - file_names
+   info - The file name 'DayBookings.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\DayBookings.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\DayBookings.dart:56:54 - deprecated_member_use
+   info - The file name 'SmallCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:62:73 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:62:133 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\SmallCalendar.dart:69:54 - deprecated_member_use
+   info - The file name 'VenueAvailabilityCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\VenueAvailabilityCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\VenueAvailabilityCalendar.dart:108:36 - deprecated_member_use
+   info - The file name 'VenueCalendarDayPanel.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\VenueCalendarDayPanel.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\VenueCalendarDayPanel.dart:52:62 - deprecated_member_use
+   info - The file name 'VenueCalendarWorkspace.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:101:71 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:102:109 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\availability\VenueCalendarWorkspace.dart:116:98 - deprecated_member_use
+   info - The file name 'BookingFilters.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\bookings\BookingFilters.dart:1:1 - file_names
+   info - The file name 'BookingStats.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:1:1 - file_names
+   info - Statements in an if should be enclosed in a block - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:16:70 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:17:44 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:18:44 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:19:43 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\bookings\BookingStats.dart:55:52 - deprecated_member_use
+   info - The file name 'BookingTable.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\bookings\BookingTable.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\bookings\BookingTable.dart:78:54 - deprecated_member_use
+   info - The file name 'BorrowRequestCard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:27:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\borrow-hub\BorrowRequestCard.dart:69:65 - deprecated_member_use
+   info - The file name 'Step1BasicInfo.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\create-service\Step1BasicInfo.dart:1:1 - file_names
+   info - The file name 'Step2Pricing.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\create-service\Step2Pricing.dart:1:1 - file_names
+   info - The file name 'Step3Gallery.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:84:54 - deprecated_member_use
+   info - Statements in a for should be enclosed in a block - lib\web_clone\src\components\vendor\create-service\Step3Gallery.dart:103:53 - curly_braces_in_flow_control_structures
+   info - The file name 'Step4Review.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\create-service\Step4Review.dart:1:1 - file_names
+   info - The file name 'WizardProgress.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\create-service\WizardProgress.dart:1:1 - file_names
+   info - The file name 'NetworkGuard.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\inventory\NetworkGuard.dart:1:1 - file_names
+   info - The file name 'ChatQuickReplies.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\messages\ChatQuickReplies.dart:1:1 - file_names
+   info - The file name 'ChatSidebar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:81:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\messages\ChatSidebar.dart:85:91 - deprecated_member_use
+   info - The file name 'ChatThread.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\messages\ChatThread.dart:1:1 - file_names
+   info - The file name 'ComposeChatModal.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\messages\ComposeChatModal.dart:1:1 - file_names
+   info - The file name 'CreateTemplateModal.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\messages\CreateTemplateModal.dart:1:1 - file_names
+   info - The file name 'SettingsSidebar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\vendor\settings\SettingsSidebar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\vendor\settings\SettingsSidebar.dart:32:49 - deprecated_member_use
+   info - The file name 'PublicVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\venue\PublicVenueCalendar.dart:1:1 - file_names
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\venue\PublicVenueCalendar.dart:110:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\venue\PublicVenueCalendar.dart:121:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\web_clone\src\components\venue\PublicVenueCalendar.dart:159:26 - deprecated_member_use
+   info - The file name 'VenueFaqSection.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\components\venue\VenueFaqSection.dart:1:1 - file_names
+   info - The file name 'AuthContext.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\context\AuthContext.dart:1:1 - file_names
+   info - The file name 'heroSearchOptions.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\data\heroSearchOptions.dart:1:1 - file_names
+   info - The file name 'lahoreAreas.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\data\lahoreAreas.dart:1:1 - file_names
+   info - The file name 'useBorrowHub.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useBorrowHub.dart:1:1 - file_names
+   info - The file name 'useChatMessages.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useChatMessages.dart:1:1 - file_names
+   info - The file name 'usePublicVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\usePublicVenueCalendar.dart:1:1 - file_names
+   info - The file name 'useVendorAnalyticsData.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useVendorAnalyticsData.dart:1:1 - file_names
+   info - The file name 'useVendorInbox.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useVendorInbox.dart:1:1 - file_names
+   info - The file name 'useVendorVenue.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useVendorVenue.dart:1:1 - file_names
+   info - The file name 'useVenueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\hooks\useVenueCalendar.dart:1:1 - file_names
+   info - The file name 'aiBackendUrl.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\aiBackendUrl.dart:1:1 - file_names
+   info - The file name 'pendingActions.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\auth\pendingActions.dart:1:1 - file_names
+   info - The file name 'borrowHubUtils.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\borrowHubUtils.dart:1:1 - file_names
+   info - The file name 'chatUtils.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\chatUtils.dart:1:1 - file_names
+   info - The file name 'eventDisplay.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\eventDisplay.dart:1:1 - file_names
+   info - The file name 'borrowHub.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\firestore\borrowHub.dart:1:1 - file_names
+   info - The file name 'vendorOnboarding.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\firestore\vendorOnboarding.dart:1:1 - file_names
+   info - The file name 'venueCalendar.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\firestore\venueCalendar.dart:1:1 - file_names
+   info - The file name 'venueMyServicesState.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\firestore\venueMyServicesState.dart:1:1 - file_names
+   info - The file name 'sheetsAuth.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\google\sheetsAuth.dart:1:1 - file_names
+   info - The file name 'zaydanCallingSheet.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\google\zaydanCallingSheet.dart:1:1 - file_names
+   info - The file name 'messageInboxFilters.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\messageInboxFilters.dart:1:1 - file_names
+   info - The file name 'messageTemplates.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\messageTemplates.dart:1:1 - file_names
+   info - The file name 'publicVenues.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\publicVenues.dart:1:1 - file_names
+   info - The file name 'ragFallback.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\ragFallback.dart:1:1 - file_names
+   info - The file name 'venueFaqs.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\venueFaqs.dart:1:1 - file_names
+   info - The file name 'venueFilters.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\venueFilters.dart:1:1 - file_names
+   info - The file name 'venuePricing.dart' isn't a lower_case_with_underscores identifier - lib\web_clone\src\lib\venuePricing.dart:1:1 - file_names
+
+cmd.exe : 373 issues found. (ran in 23.3s)
+At line:1 char:1
++ cmd.exe /c "cd /d D:\FESTALYTICS_OPENCODE\festalytics-app-full-clone  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (373 issues found. (ran in 23.3s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

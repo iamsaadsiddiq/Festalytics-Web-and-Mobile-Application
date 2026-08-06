@@ -1,0 +1,35 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isImage() {
+      return request.resource != null
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    function isMedia() {
+      return request.resource != null
+        && (
+          request.resource.contentType.matches('image/.*')
+          || request.resource.contentType.matches('video/.*')
+        );
+    }
+
+    // Vendor inventory media uploads:
+    // venues/{currentVendorSlug}/inventory/{timestamp}_{filename}
+    match /venues/{vendorSlug}/inventory/{fileName} {
+      allow read: if true;
+      allow write: if isSignedIn() && isImage();
+    }
+
+    // Borrow Hub media uploads:
+    // borrow-hub-assets/{itemId}/{filename}
+    match /borrow-hub-assets/{itemId}/{fileName} {
+      allow read: if true;
+      allow write: if isSignedIn() && isMedia();
+    }
+  }
+}

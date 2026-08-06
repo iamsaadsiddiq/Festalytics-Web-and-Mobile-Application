@@ -1,0 +1,197 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isVendor() {
+      return isSignedIn() && userDoc().role == 'vendor';
+    }
+
+    function hasVerifiedEmail() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function myVenueId() {
+      return userDoc().venueId;
+    }
+
+    function hasLinkedVenue() {
+      return myVenueId() != null;
+    }
+
+    function ownsVenue(venueId) {
+      return isVendor() && myVenueId() == venueId;
+    }
+
+    function verifiedOrLegacyVendor() {
+      return isVendor() && (hasVerifiedEmail() || hasLinkedVenue());
+    }
+
+    function userProtectedFields() {
+      return ['role', 'venueId', 'emailVerified', 'emailVerifiedAt', 'onboardingComplete'];
+    }
+
+    function userProtectedFieldsChanged() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasAny(userProtectedFields());
+    }
+
+    function emailVerifiedWriteIsSafe() {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(['emailVerified'])
+        || request.resource.data.emailVerified == true;
+    }
+
+    function roleWriteIsSafe() {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role'])
+        || request.resource.data.role == resource.data.role;
+    }
+
+    function requestedVenueOwnedByUser() {
+      return !request.resource.data.keys().hasAny(['venueId'])
+        || request.resource.data.venueId == null
+        || (
+          exists(/databases/$(database)/documents/venues/$(request.resource.data.venueId))
+          && get(/databases/$(database)/documents/venues/$(request.resource.data.venueId)).data.ownerId == request.auth.uid
+        );
+    }
+
+    function legacyVenueLinkOnly() {
+      return request.resource.data.diff(resource.data).affectedKeys()
+        .hasOnly(['venueId', 'hallName', 'onboardingComplete', 'updatedAt']);
+    }
+
+    function legacyZaydanClaim(venueId) {
+      return venueId == 'zaydan-banquet-hall'
+        && isVendor()
+        && !hasLinkedVenue()
+        && !userDoc().keys().hasAny(['pendingVendorOnboarding'])
+        && resource.data.ownerId == null
+        && request.resource.data.ownerId == request.auth.uid;
+    }
+
+    match /users/{userId} {
+      allow read: if isSignedIn() && request.auth.uid == userId;
+      allow create: if isSignedIn()
+        && request.auth.uid == userId
+        && request.resource.data.uid == userId
+        && (
+          !request.resource.data.keys().hasAny(['venueId'])
+          || request.resource.data.venueId == null
+        );
+      allow update: if isSignedIn()
+        && request.auth.uid == userId
+        && (
+          !userProtectedFieldsChanged()
+          || (
+            hasVerifiedEmail()
+            && requestedVenueOwnedByUser()
+            && roleWriteIsSafe()
+            && emailVerifiedWriteIsSafe()
+          )
+          || (
+            legacyVenueLinkOnly()
+            && requestedVenueOwnedByUser()
+          )
+        );
+    }
+
+    match /venues/{venueId} {
+      allow read: if true;
+      allow create: if isVendor()
+        && hasVerifiedEmail()
+        && request.resource.data.ownerId == request.auth.uid;
+      allow update: if (
+        ownsVenue(venueId)
+        && (hasVerifiedEmail() || hasLinkedVenue())
+      ) || legacyZaydanClaim(venueId);
+      allow delete: if ownsVenue(venueId) && hasVerifiedEmail();
+    }
+
+    match /inventory_listings/{listingId} {
+      allow read: if verifiedOrLegacyVendor();
+      allow create: if verifiedOrLegacyVendor()
+        && request.resource.data.lenderVenueId == myVenueId();
+      allow update, delete: if verifiedOrLegacyVendor()
+        && resource.data.lenderVenueId == myVenueId();
+    }
+
+    match /borrow_requests/{requestId} {
+      allow read: if verifiedOrLegacyVendor() && (
+        resource.data.borrowerVenueId == myVenueId() ||
+        resource.data.lenderVenueId == myVenueId()
+      );
+      allow create: if verifiedOrLegacyVendor()
+        && request.resource.data.borrowerVenueId == myVenueId()
+        && request.resource.data.borrowerUserId == request.auth.uid
+        && request.resource.data.borrowerVenueId != request.resource.data.lenderVenueId
+        && request.resource.data.status == 'pending_lender_approval';
+      allow update: if verifiedOrLegacyVendor() && (
+        resource.data.lenderVenueId == myVenueId() ||
+        (resource.data.borrowerVenueId == myVenueId()
+          && resource.data.status == 'pending_lender_approval')
+      );
+    }
+
+    match /bookings/{bookingId} {
+      allow read, write: if isSignedIn();
+    }
+
+    match /quotations/{quotationId} {
+      allow read, write: if isSignedIn();
+    }
+
+    function chatRoom(chatId) {
+      return get(/databases/$(database)/documents/chats/$(chatId)).data;
+    }
+
+    function canReadChat(chatId) {
+      return isSignedIn() && (
+        chatRoom(chatId).customerId == request.auth.uid ||
+        (isVendor() && chatRoom(chatId).venueSlug == myVenueId())
+      );
+    }
+
+    match /chats/{chatId} {
+      allow read: if canReadChat(chatId);
+
+      allow create: if isSignedIn() && (
+        (isVendor()
+          && request.resource.data.venueSlug == myVenueId()
+          && request.resource.data.chatId == chatId)
+        || (request.resource.data.customerId == request.auth.uid
+          && request.resource.data.venueSlug is string
+          && request.resource.data.chatId == chatId)
+      );
+
+      allow update: if isSignedIn() && (
+        (isVendor() && resource.data.venueSlug == myVenueId()) ||
+        resource.data.customerId == request.auth.uid
+      );
+
+      match /messages/{messageId} {
+        allow read: if canReadChat(chatId);
+
+        allow create: if canReadChat(chatId) && (
+          (isVendor()
+            && chatRoom(chatId).venueSlug == myVenueId()
+            && request.resource.data.senderId == myVenueId())
+          || (chatRoom(chatId).customerId == request.auth.uid
+            && (
+              request.resource.data.senderId == request.auth.uid
+              || request.resource.data.type == 'system'
+            ))
+        );
+
+        allow update: if chatRoom(chatId).customerId == request.auth.uid
+          && resource.data.type == 'counter_offer'
+          && request.resource.data.type == 'counter_offer';
+      }
+    }
+  }
+}

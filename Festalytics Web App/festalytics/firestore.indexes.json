@@ -1,0 +1,36 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "borrow_requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "lenderVenueId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "borrow_requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "borrowerVenueId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "inventory_listings",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isActive", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "venueSlug", "order": "ASCENDING" },
+        { "fieldPath": "lastMessageTimestamp", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
