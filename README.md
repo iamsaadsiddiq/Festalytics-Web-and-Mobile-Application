@@ -2,8 +2,6 @@
 
 ## AI Powered Intelligent Event Planning and Management Platform
 
-![Festalytics Banner](https://via.placeholder.com/1200x400)
-
 Festalytics is an AI-powered event planning ecosystem designed to transform traditional event management through automation, intelligent recommendations, and data-driven decision support.
 
 The platform provides a unified environment where users can plan events, discover vendors, estimate budgets, receive AI-based recommendations, manage bookings, and communicate efficiently with service providers.
